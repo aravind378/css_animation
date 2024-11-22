@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.moving{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border-radius: 50%;
+    animation: move 4s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes move {
+    
+    16%{
+        transform: translateX(-100px);
+        background: blue;
+    }
+    32%{
+        transform: translateY(-100px);
+    }
+    48%{
+        transform: translateX(100px);
+    }
+    64%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
